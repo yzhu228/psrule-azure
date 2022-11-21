@@ -22,4 +22,4 @@ execution:
 suppression:
   Azure.Deployment.SecureValue:
   - 'C:\workshop\temp\appInsights.bicep'
-  - 'appInsights.bicep'
+  - '/home/runner/work/psrule-azure/psrule-azure/appInsights.bicep'
