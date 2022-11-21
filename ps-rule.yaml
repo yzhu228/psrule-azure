@@ -1,0 +1,24 @@
+#
+# PSRule configuration
+#
+
+# Please see the documentation for all configuration options:
+# https://aka.ms/ps-rule/options
+
+# YAML: Enable expansion for Bicep source files.
+configuration:
+  AZURE_BICEP_FILE_EXPANSION: true
+
+requires:
+  PSRule: '@pre >=2.0.0'
+
+output:
+  culture:
+  - en-US
+
+execution:
+  notProcessedWarning: false
+
+suppression:
+  Azure.Deployment.SecureValue:
+  - 'C:\workshop\temp\appInsights.bicep'
